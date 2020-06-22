@@ -1,0 +1,11 @@
+{
+"safari": {
+    "default": "latest",
+    "versions": {
+        "latest": {
+                "image": ["/usr/bin/safaridriver"],
+                "port": "4441"
+        }
+    }
+}
+}
