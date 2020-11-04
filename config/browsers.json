@@ -1,9 +1,9 @@
 {
     "firefox": {
-        "default": "57.0",
+        "default": "82.0",
         "versions": {
-            "57.0": {
-                "image": "selenoid/vnc:firefox_57.0",
+            "82.0": {
+                "image": "selenoid/vnc:firefox_82.0",
                 "port": "4444",
                 "path": "/wd/hub"
             }
@@ -14,6 +14,15 @@
         "versions": {
             "81.0": {
                 "image": "selenoid/vnc:chrome_81.0",
+                "port": "4444"
+            }
+        }
+    },
+    "MicrosoftEdge": {
+        "default": "latest",
+        "versions": {
+            "latest": {
+                "image": "browsers/edge:latest",
                 "port": "4444"
             }
         }
