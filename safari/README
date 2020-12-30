@@ -1,1 +1,14 @@
-./selenoid_win_amd64.exe -conf ./browsers.json -disable-docker
+How to start selenoid with safari/macOS:
+curl -Lo ~/selenoid/safari/selenoid https://github.com/aerokube/selenoid/releases/download/1.10.0/selenoid_darwin_amd64
+chmod +x ~/selenoid/safari/selenoid
+~/selenoid/safari/selenoid -conf ~/selenoid/safari/browsers.json -disable-docker
+
+How to start selenoid UI (without docker)/macOS:
+curl -Lo ~/selenoid/selenoid-ui https://github.com/aerokube/selenoid-ui/releases/download/1.10.1/selenoid-ui_darwin_amd64
+chmod +x ~/selenoid/selenoid-ui
+~/selenoid/selenoid-ui --selenoid-uri http://localhost:4444
+
+Possible issue:
+/usr/bin/safaridriver --enable
+
+//                "image": ["/usr/bin/safaridriver", "--whitelisted-ips="],

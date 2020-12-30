@@ -1,10 +1,11 @@
 {
-"safari": {
-    "default": "latest",
+  "safari": {
+    "default": "14.0",
     "versions": {
-        "latest": {
-                "image": ["/usr/bin/safaridriver"]
-        }
+      "14.0": {
+        "image": ["safaridriver"],
+        "path": "/"
+      }
     }
-}
+  }
 }
